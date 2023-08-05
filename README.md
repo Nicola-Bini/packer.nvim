@@ -285,7 +285,7 @@ default configuration values (and structure of the configuration table) are:
 {
   ensure_dependencies   = true, -- Should packer install plugin dependencies?
   snapshot = nil, -- Name of the snapshot you would like to load at startup
-  snapshot_path = join_paths(stdpath 'cache', 'packer.nvim'), -- Default save directory for snapshots
+  snapshot_path = util.join_paths(stdpath 'cache', 'packer.nvim'), -- Default save directory for snapshots
   package_root   = util.join_paths(vim.fn.stdpath('data'), 'site', 'pack'),
   compile_path = util.join_paths(vim.fn.stdpath('config'), 'plugin', 'packer_compiled.lua'),
   plugin_package = 'packer', -- The default package for plugins
