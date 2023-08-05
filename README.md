@@ -282,6 +282,7 @@ specification code (e.g. by sourcing your plugin specification file with `luafil
 You may pass a table of configuration values to `packer.init()` to customize its operation. The
 default configuration values (and structure of the configuration table) are:
 ```lua
+local util = require('packer.util')
 {
   ensure_dependencies   = true, -- Should packer install plugin dependencies?
   snapshot = nil, -- Name of the snapshot you would like to load at startup
